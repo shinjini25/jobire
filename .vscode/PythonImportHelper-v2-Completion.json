@@ -1,0 +1,1187 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "dotenv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.gis.db.models.fields",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.gis.db.models.fields",
+        "description": "django.contrib.gis.db.models.fields",
+        "detail": "django.contrib.gis.db.models.fields",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.gis.geos.point",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.gis.geos.point",
+        "description": "django.contrib.gis.geos.point",
+        "detail": "django.contrib.gis.geos.point",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MaxValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "job.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "job.models",
+        "description": "job.models",
+        "detail": "job.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "geocoder",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "geocoder",
+        "description": "geocoder",
+        "detail": "geocoder",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.contrib.gis.db",
+        "description": "django.contrib.gis.db",
+        "isExtraImport": true,
+        "detail": "django.contrib.gis.db",
+        "documentation": {}
+    },
+    {
+        "label": "Point",
+        "importPath": "django.contrib.gis.geos",
+        "description": "django.contrib.gis.geos",
+        "isExtraImport": true,
+        "detail": "django.contrib.gis.geos",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Avg",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Min",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Max",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal2tiles",
+        "description": "osgeo_utils.gdal2tiles",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal2tiles",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal2tiles",
+        "description": "osgeo_utils.gdal2tiles",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal2tiles",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "deprecation_warn",
+        "importPath": "osgeo.gdal",
+        "description": "osgeo.gdal",
+        "isExtraImport": true,
+        "detail": "osgeo.gdal",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal2xyz",
+        "description": "osgeo_utils.gdal2xyz",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal2xyz",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal2xyz",
+        "description": "osgeo_utils.gdal2xyz",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal2xyz",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdalattachpct",
+        "description": "osgeo_utils.gdalattachpct",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdalattachpct",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdalattachpct",
+        "description": "osgeo_utils.gdalattachpct",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdalattachpct",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdalcompare",
+        "description": "osgeo_utils.gdalcompare",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdalcompare",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdalcompare",
+        "description": "osgeo_utils.gdalcompare",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdalcompare",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdalmove",
+        "description": "osgeo_utils.gdalmove",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdalmove",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdalmove",
+        "description": "osgeo_utils.gdalmove",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdalmove",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_calc",
+        "description": "osgeo_utils.gdal_calc",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_calc",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_calc",
+        "description": "osgeo_utils.gdal_calc",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_calc",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_edit",
+        "description": "osgeo_utils.gdal_edit",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_edit",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_edit",
+        "description": "osgeo_utils.gdal_edit",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_edit",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_fillnodata",
+        "description": "osgeo_utils.gdal_fillnodata",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_fillnodata",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_fillnodata",
+        "description": "osgeo_utils.gdal_fillnodata",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_fillnodata",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_merge",
+        "description": "osgeo_utils.gdal_merge",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_merge",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_merge",
+        "description": "osgeo_utils.gdal_merge",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_merge",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_pansharpen",
+        "description": "osgeo_utils.gdal_pansharpen",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_pansharpen",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_pansharpen",
+        "description": "osgeo_utils.gdal_pansharpen",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_pansharpen",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_polygonize",
+        "description": "osgeo_utils.gdal_polygonize",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_polygonize",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_polygonize",
+        "description": "osgeo_utils.gdal_polygonize",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_polygonize",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_proximity",
+        "description": "osgeo_utils.gdal_proximity",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_proximity",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_proximity",
+        "description": "osgeo_utils.gdal_proximity",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_proximity",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_retile",
+        "description": "osgeo_utils.gdal_retile",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_retile",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_retile",
+        "description": "osgeo_utils.gdal_retile",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_retile",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.gdal_sieve",
+        "description": "osgeo_utils.gdal_sieve",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_sieve",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.gdal_sieve",
+        "description": "osgeo_utils.gdal_sieve",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.gdal_sieve",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "pformat",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "jmespath",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "exceptions",
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "isExtraImport": true,
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.ogrmerge",
+        "description": "osgeo_utils.ogrmerge",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.ogrmerge",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.ogrmerge",
+        "description": "osgeo_utils.ogrmerge",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.ogrmerge",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.pct2rgb",
+        "description": "osgeo_utils.pct2rgb",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.pct2rgb",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.pct2rgb",
+        "description": "osgeo_utils.pct2rgb",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.pct2rgb",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "osgeo_utils.rgb2pct",
+        "description": "osgeo_utils.rgb2pct",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.rgb2pct",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "osgeo_utils.rgb2pct",
+        "description": "osgeo_utils.rgb2pct",
+        "isExtraImport": true,
+        "detail": "osgeo_utils.rgb2pct",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.backend.asgi",
+        "description": "backend.backend.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "backend.backend.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\ndotenv.read_dotenv()\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'corsheaders',\n    # 'storages'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'backend.urls'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "ROOT_URLCONF = 'backend.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'backend.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.contrib.gis.db.backends.postgis',\n        'NAME': os.environ.get('DATABASE_NAME'),\n        'USER': os.environ.get('DATABASE_USER'),\n        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),\n        'HOST': os.environ.get('DATABASE_HOST'),",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.contrib.gis.db.backends.postgis',\n        'NAME': os.environ.get('DATABASE_NAME'),\n        'USER': os.environ.get('DATABASE_USER'),\n        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),\n        'HOST': os.environ.get('DATABASE_HOST'),\n        'PORT': os.environ.get('DATABASE_PORT')\n    }\n}",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nVIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nVIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')\nGEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nVIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')\nGEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'\nGDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nVIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')\nGEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'\nGDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nVIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')\nGEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'\nGDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "VIRTUAL_ENV_BASE",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "VIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')\nGEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'\nGDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GEOS_LIBRARY_PATH",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "GEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'\nGDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "GDAL_LIBRARY_PATH",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "GDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.backend.urls",
+        "description": "backend.backend.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('job.urls')),\n]",
+        "detail": "backend.backend.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.backend.wsgi",
+        "description": "backend.backend.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "backend.backend.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.job.migrations.0001_initial",
+        "description": "backend.job.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Job',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "backend.job.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "JobConfig",
+        "kind": 6,
+        "importPath": "backend.job.apps",
+        "description": "backend.job.apps",
+        "peekOfCode": "class JobConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'job'",
+        "detail": "backend.job.apps",
+        "documentation": {}
+    },
+    {
+        "label": "JobType",
+        "kind": 6,
+        "importPath": "backend.job.models",
+        "description": "backend.job.models",
+        "peekOfCode": "class JobType(models.TextChoices):\n    Permanent = 'Permanent'\n    Temporary = 'Temporary'\n    Intership = 'Intership'\nclass Education(models.TextChoices):\n    Bachelors = 'Bachelors'\n    Masters = 'Masters'\n    Phd = 'Phd'\nclass Industry(models.TextChoices):\n    Business = 'Business'",
+        "detail": "backend.job.models",
+        "documentation": {}
+    },
+    {
+        "label": "Education",
+        "kind": 6,
+        "importPath": "backend.job.models",
+        "description": "backend.job.models",
+        "peekOfCode": "class Education(models.TextChoices):\n    Bachelors = 'Bachelors'\n    Masters = 'Masters'\n    Phd = 'Phd'\nclass Industry(models.TextChoices):\n    Business = 'Business'\n    IT = 'Information Technology'\n    Banking = 'Banking'\n    Education = 'Education/Training'\n    Telecommunication = 'Telecommunication'",
+        "detail": "backend.job.models",
+        "documentation": {}
+    },
+    {
+        "label": "Industry",
+        "kind": 6,
+        "importPath": "backend.job.models",
+        "description": "backend.job.models",
+        "peekOfCode": "class Industry(models.TextChoices):\n    Business = 'Business'\n    IT = 'Information Technology'\n    Banking = 'Banking'\n    Education = 'Education/Training'\n    Telecommunication = 'Telecommunication'\n    Others = 'Others'\nclass Experience(models.TextChoices):\n    NO_EXPERIENCE = 'No Experience'\n    ONE_YEAR = '1 Years'",
+        "detail": "backend.job.models",
+        "documentation": {}
+    },
+    {
+        "label": "Experience",
+        "kind": 6,
+        "importPath": "backend.job.models",
+        "description": "backend.job.models",
+        "peekOfCode": "class Experience(models.TextChoices):\n    NO_EXPERIENCE = 'No Experience'\n    ONE_YEAR = '1 Years'\n    TWO_YEAR = '2 Years'\n    THREE_YEAR_PLUS = '3 Years above'\ndef return_date_time():\n    now = datetime.now()\n    return now + timedelta(days=10)\nclass Job(models.Model):\n    title = models.CharField(max_length=200, null=True)",
+        "detail": "backend.job.models",
+        "documentation": {}
+    },
+    {
+        "label": "Job",
+        "kind": 6,
+        "importPath": "backend.job.models",
+        "description": "backend.job.models",
+        "peekOfCode": "class Job(models.Model):\n    title = models.CharField(max_length=200, null=True)\n    description = models.TextField(null=True)\n    email = models.EmailField(null=True)\n    address = models.CharField(max_length=100, null=True)\n    jobType = models.CharField(\n        max_length=10,\n        choices=JobType.choices,\n        default=JobType.Permanent\n    )",
+        "detail": "backend.job.models",
+        "documentation": {}
+    },
+    {
+        "label": "return_date_time",
+        "kind": 2,
+        "importPath": "backend.job.models",
+        "description": "backend.job.models",
+        "peekOfCode": "def return_date_time():\n    now = datetime.now()\n    return now + timedelta(days=10)\nclass Job(models.Model):\n    title = models.CharField(max_length=200, null=True)\n    description = models.TextField(null=True)\n    email = models.EmailField(null=True)\n    address = models.CharField(max_length=100, null=True)\n    jobType = models.CharField(\n        max_length=10,",
+        "detail": "backend.job.models",
+        "documentation": {}
+    },
+    {
+        "label": "JobSerializer",
+        "kind": 6,
+        "importPath": "backend.job.serializers",
+        "description": "backend.job.serializers",
+        "peekOfCode": "class JobSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Job\n        fields ='__all__'",
+        "detail": "backend.job.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.job.urls",
+        "description": "backend.job.urls",
+        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    # path('jobs/new/', views.newJob, name='new_job'),\n    # path('jobs/<str:pk>/', views.getJob, name='job'),\n    # path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    # path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    # path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats')\n]",
+        "detail": "backend.job.urls",
+        "documentation": {}
+    },
+    {
+        "label": "getAllJobs",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def getAllJobs(request):\n    jobs = Job.objects.all()\n    serializer = JobSerializer(jobs, many=True)\n    return Response(serializer.data)",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.manage",
+        "description": "backend.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "backend.manage",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "myenv.Scripts.activate_this",
+        "description": "myenv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "myenv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "myenv.Scripts.jp",
+        "description": "myenv.Scripts.jp",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('expression')\n    parser.add_argument('-f', '--filename',\n                        help=('The filename containing the input data.  '\n                              'If a filename is not given then data is '\n                              'read from stdin.'))\n    parser.add_argument('--ast', action='store_true',\n                        help=('Pretty print the AST, do not search the data.'))\n    args = parser.parse_args()",
+        "detail": "myenv.Scripts.jp",
+        "documentation": {}
+    }
+]
