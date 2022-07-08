@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'django_filters',
     
-    'job.apps.JobConfig'
+    'job.apps.JobConfig',
+    'account.apps.appConfig',
 ]
 
 MIDDLEWARE = [

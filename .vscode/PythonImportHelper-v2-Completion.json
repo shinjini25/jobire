@@ -1,5 +1,133 @@
 [
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -31,22 +159,6 @@
         "importPath": "dotenv",
         "description": "dotenv",
         "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -141,30 +253,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "django.db.models.deletion",
         "kind": 6,
         "isExtraImport": true,
@@ -183,11 +271,11 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
+        "label": "rest_framework",
+        "importPath": "django_filters",
+        "description": "django_filters",
         "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django_filters",
         "documentation": {}
     },
     {
@@ -248,30 +336,6 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "get_object_or_404",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
@@ -317,6 +381,14 @@
         "description": "django.db.models",
         "isExtraImport": true,
         "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "PageNumberPagination",
+        "importPath": "rest_framework.pagination",
+        "description": "rest_framework.pagination",
+        "isExtraImport": true,
+        "detail": "rest_framework.pagination",
         "documentation": {}
     },
     {
@@ -789,6 +861,15 @@
         "documentation": {}
     },
     {
+        "label": "AccountConfig",
+        "kind": 6,
+        "importPath": "backend.account.apps",
+        "description": "backend.account.apps",
+        "peekOfCode": "class AccountConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'account'",
+        "detail": "backend.account.apps",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "backend.backend.asgi",
@@ -1005,6 +1086,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.job.migrations.0002_alter_job_jobtype",
+        "description": "backend.job.migrations.0002_alter_job_jobtype",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('job', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='job',\n            name='jobType',\n            field=models.CharField(choices=[('Permanent', 'Permanent'), ('Temporary', 'Temporary'), ('Internship', 'Internship')], default='Permanent', max_length=10),\n        ),",
+        "detail": "backend.job.migrations.0002_alter_job_jobtype",
+        "documentation": {}
+    },
+    {
         "label": "JobConfig",
         "kind": 6,
         "importPath": "backend.job.apps",
@@ -1014,11 +1104,20 @@
         "documentation": {}
     },
     {
+        "label": "JobsFilter",
+        "kind": 6,
+        "importPath": "backend.job.filters",
+        "description": "backend.job.filters",
+        "peekOfCode": "class JobsFilter(filters.FilterSet):\n    keyword = filters.CharFilter(field_name='title', lookup_expr='icontains')\n    location = filters.CharFilter(field_name='address', lookup_expr='icontains')\n    min_salary = filters.NumberFilter(field_name=\"salary\" or 0, lookup_expr='gte')\n    max_salary = filters.NumberFilter(field_name=\"salary\" or 1000000, lookup_expr='lte')\n    class Meta:\n        model = Job\n        fields = ['keyword', 'location','education', 'jobType', 'experience', 'industry', 'min_salary', 'max_salary']",
+        "detail": "backend.job.filters",
+        "documentation": {}
+    },
+    {
         "label": "JobType",
         "kind": 6,
         "importPath": "backend.job.models",
         "description": "backend.job.models",
-        "peekOfCode": "class JobType(models.TextChoices):\n    Permanent = 'Permanent'\n    Temporary = 'Temporary'\n    Intership = 'Intership'\nclass Education(models.TextChoices):\n    Bachelors = 'Bachelors'\n    Masters = 'Masters'\n    Phd = 'Phd'\nclass Industry(models.TextChoices):\n    Business = 'Business'",
+        "peekOfCode": "class JobType(models.TextChoices):\n    Permanent = 'Permanent'\n    Temporary = 'Temporary'\n    Internship = 'Internship'\nclass Education(models.TextChoices):\n    Bachelors = 'Bachelors'\n    Masters = 'Masters'\n    Phd = 'Phd'\nclass Industry(models.TextChoices):\n    Business = 'Business'",
         "detail": "backend.job.models",
         "documentation": {}
     },
@@ -1081,7 +1180,7 @@
         "kind": 5,
         "importPath": "backend.job.urls",
         "description": "backend.job.urls",
-        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    # path('jobs/new/', views.newJob, name='new_job'),\n    # path('jobs/<str:pk>/', views.getJob, name='job'),\n    # path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    # path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    # path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats')\n]",
         "detail": "backend.job.urls",
         "documentation": {}
     },
@@ -1090,7 +1189,52 @@
         "kind": 2,
         "importPath": "backend.job.views",
         "description": "backend.job.views",
-        "peekOfCode": "def getAllJobs(request):\n    jobs = Job.objects.all()\n    serializer = JobSerializer(jobs, many=True)\n    return Response(serializer.data)",
+        "peekOfCode": "def getAllJobs(request):\n    filterset = JobsFilter(request.GET, queryset=Job.objects.all().order_by('id'))\n    count = filterset.qs.count()\n    # Pagination\n    resPerPage = 3\n    paginator = PageNumberPagination()\n    paginator.page_size = resPerPage\n    paginatedQueryset = paginator.paginate_queryset(filterset.qs, request)\n    serializer = JobSerializer(paginatedQueryset, many=True)\n    return Response({",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "getJob",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def getJob(request, pk):\n    job = get_object_or_404(Job, id=pk)\n    serializer = JobSerializer(job, many=False)\n    return Response(serializer.data)\n@api_view(['POST'])\ndef newJob(request):\n    data = request.data\n    job = Job.objects.create(**data)\n    serializer = JobSerializer(job, many=False)\n    return Response(serializer.data)",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "newJob",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def newJob(request):\n    data = request.data\n    job = Job.objects.create(**data)\n    serializer = JobSerializer(job, many=False)\n    return Response(serializer.data)\n@api_view(['PUT'])\ndef updateJob(request, pk):\n    job = get_object_or_404(Job, id=pk)\n    job.title = request.data['title']\n    job.description = request.data['description']",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "updateJob",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def updateJob(request, pk):\n    job = get_object_or_404(Job, id=pk)\n    job.title = request.data['title']\n    job.description = request.data['description']\n    job.email = request.data['email']\n    job.address = request.data['address']\n    job.jobType = request.data['jobType']\n    job.education = request.data['education']\n    job.industry = request.data['industry']\n    job.experience = request.data['experience']",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "deleteJob",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def deleteJob(request, pk):\n    job = get_object_or_404(Job, id=pk)\n    job.delete()\n    return Response({ 'message': 'Job {pk} is Deleted.' }, status=status.HTTP_200_OK)\n@api_view(['GET'])\ndef getTopicStats(request, topic):\n    args = { 'title__icontains': topic }\n    jobs = Job.objects.filter(**args)\n    if len(jobs) == 0:\n        return Response({ 'message': 'Not stats found for {topic}'.format(topic=topic) })",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "getTopicStats",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def getTopicStats(request, topic):\n    args = { 'title__icontains': topic }\n    jobs = Job.objects.filter(**args)\n    if len(jobs) == 0:\n        return Response({ 'message': 'Not stats found for {topic}'.format(topic=topic) })\n    stats = jobs.aggregate(\n        total_jobs = Count('title'),\n        avg_positions = Avg('positions'),\n        avg_salary = Avg('salary'),\n        min_salary = Min('salary'),",
         "detail": "backend.job.views",
         "documentation": {}
     },
