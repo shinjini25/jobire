@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework import status
-
+from .validators import validate_file_extension
 from django.contrib.auth.hashers import make_password
 from .serializers import SignUpSerializer, UserSerializer
 
@@ -42,33 +42,61 @@ def register(request):
         return Response(user.errors)
 
 
-# @api_view(['GET'])
-# @permission_classes([IsAuthenticated])
-# def currentUser(request):
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def currentUser(request):
 
-#     user = UserSerializer(request.user)
+    user = UserSerializer(request.user)
 
-#     return Response(user.data)
-
-
-# @api_view(['PUT'])
-# @permission_classes([IsAuthenticated])
-# def updateUser(request):
-#     user = request.user
+    return Response(user.data)
 
 
-#     data = request.data
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def updateUser(request):
+    user = request.user
 
-#     user.first_name = data['first_name']
-#     user.last_name = data['last_name']
-#     user.username = data['email']
-#     user.email = data['email']
 
-#     if data['password'] != '':
-#         user.password = make_password(data['password'])
+    data = request.data
+    if(data['first_name'] != "" and data['last_name'] != "" and data['email'] != ""):
+        user.first_name = data['first_name']
+        user.last_name = data['last_name']
+        user.username = data['email']
+        user.email = data['email']
+    
+        if data['password'] != '':
+            user.password = make_password(data['password'])
+            
+        user.save()
 
-#     user.save()
+        serializer = UserSerializer(user, many=False)
+        
+        return Response(serializer.data)
 
-#     serializer = UserSerializer(user, many=False)
-#     return Response(serializer.data)
+    else:
+        return Response({
+                'error': 'Field(s) can not be blank'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def uploadResume(request):
+
+    user = request.user
+    resume = request.FILES['resume']
+
+    if resume == '':
+        return Response({ 'error': 'Please upload your resume.' }, status=status.HTTP_400_BAD_REQUEST)
+
+    isValidFile = validate_file_extension(resume.name)
+
+    if not isValidFile:
+        return Response({ 'error': 'Please upload only PDF file.' }, status=status.HTTP_400_BAD_REQUEST)
+
+    serializer = UserSerializer(user, many=False)
+
+    user.userprofile.resume = resume
+    user.userprofile.save()
+
+    return Response(serializer.data)
