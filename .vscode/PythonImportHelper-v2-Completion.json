@@ -1223,7 +1223,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\ndotenv.read_dotenv()\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['localhost']\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\ndotenv.read_dotenv()\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1232,7 +1232,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1241,7 +1241,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1250,7 +1250,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1673,7 +1673,7 @@
         "kind": 5,
         "importPath": "backend.job.urls",
         "description": "backend.job.urls",
-        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats'),\n    path('jobs/<str:pk>/apply', views.applyToJob, name =\"apply_job\"),\n    path('me/jobs/applied/', views.getJobsApplied, name =\"get_applied_jobs\"),\n    path('jobs/<str:pk>/check', views.isApplied, name =\"check_job_applied\"),",
         "detail": "backend.job.urls",
         "documentation": {}
     },
@@ -1737,6 +1737,42 @@
         "importPath": "backend.job.views",
         "description": "backend.job.views",
         "peekOfCode": "def applyToJob(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)\n    if user.userprofile.resume == '':\n        return Response({ 'error': 'Please upload your resume first' }, status=status.HTTP_400_BAD_REQUEST)\n    if job.lastDate < timezone.now():\n        return Response({ 'error': 'You can not apply to this job. Date is over' }, status=status.HTTP_400_BAD_REQUEST)\n    alreadyApplied = job.candidatesapplied.filter(user=user).exists()\n    if alreadyApplied:\n        return Response({ 'error': 'You have already apply to this job.' }, status=status.HTTP_400_BAD_REQUEST)",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "getJobsApplied",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def getJobsApplied(request):\n    args ={ 'user_id': request.user.id }\n    jobs = CandidatesApplied.objects.filter(**args)\n    serializer = CandidatesAppliedSerializer(jobs, many = True)\n    return Response(serializer.data)\n@api_view(['GET'])\n@permission_classes([IsAuthenticated])\ndef isApplied(request, pk):\n    isApplied = bool(False)\n    job = get_object_or_404(Job, id=pk)",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "isApplied",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def isApplied(request, pk):\n    isApplied = bool(False)\n    job = get_object_or_404(Job, id=pk)\n    args ={ 'user_id': request.user.id, 'job': job }\n    jobs = CandidatesApplied.objects.filter(**args)\n    if(jobs):\n        isApplied = bool(True)\n        return Response(isApplied)\n    return Response(isApplied)\n@api_view(['GET'])",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "getCurrentUserPostedJobs",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def getCurrentUserPostedJobs(request):\n    args = { 'user': request.user.id }\n    jobs = Job.objects.filter(**args)\n    serializer = JobSerializer(jobs, many=True)\n    return Response(serializer.data)\n@api_view(['GET'])\n@permission_classes([IsAuthenticated])\ndef getCandidatesApplied(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "getCandidatesApplied",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def getCandidatesApplied(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)\n    # only creator of the job object is allowed to see candidates\n    if job.user != user:\n        return Response({ 'error': 'You can not acces this job' }, status=status.HTTP_403_FORBIDDEN)\n    candidates = job.candidatesapplied.all()\n    serializer = CandidatesAppliedSerializer(candidates, many=True)\n    return Response(serializer.data)",
         "detail": "backend.job.views",
         "documentation": {}
     },

@@ -13,6 +13,7 @@ from .models import CandidatesApplied, Job
 
 from django.shortcuts import get_object_or_404
 from .filters import JobsFilter
+from .serializers import JobSerializer, CandidatesAppliedSerializer
 
 # Create your views here.
 
@@ -151,3 +152,53 @@ def applyToJob(request, pk):
     },
     status=status.HTTP_200_OK
     )
+    
+    
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getJobsApplied(request):
+    args ={ 'user_id': request.user.id }
+    jobs = CandidatesApplied.objects.filter(**args)
+    serializer = CandidatesAppliedSerializer(jobs, many = True)
+    return Response(serializer.data)
+    
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def isApplied(request, pk):
+    isApplied = bool(False)
+    job = get_object_or_404(Job, id=pk)
+    args ={ 'user_id': request.user.id, 'job': job }
+    jobs = CandidatesApplied.objects.filter(**args)
+    if(jobs):
+        isApplied = bool(True)
+        return Response(isApplied)
+    return Response(isApplied)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getCurrentUserPostedJobs(request):
+
+    args = { 'user': request.user.id }
+
+    jobs = Job.objects.filter(**args)
+    serializer = JobSerializer(jobs, many=True)
+
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getCandidatesApplied(request, pk):
+
+    user = request.user
+    job = get_object_or_404(Job, id=pk)
+    # only creator of the job object is allowed to see candidates
+    if job.user != user:
+        return Response({ 'error': 'You can not acces this job' }, status=status.HTTP_403_FORBIDDEN)
+
+    candidates = job.candidatesapplied.all()
+
+    serializer = CandidatesAppliedSerializer(candidates, many=True)
+
+    return Response(serializer.data)
