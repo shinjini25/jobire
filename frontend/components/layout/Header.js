@@ -9,11 +9,8 @@ function Header() {
                 <div className="navContainer">
                     <Link href="/">
                         <div className="logoWrapper">
-                            <div className="logoImgWrapper">
-                                <Image width="30" height="30" src="/images/logo.png" alt="" />
-                            </div>
-                            <span className="logo1">Job</span>
-                            <span className="logo2">bee</span>
+                            <Image width="97" height="50" src="/images/jobirelogo.png" alt="" />
+
                         </div>
                     </Link>
                     <div className="btnsWrapper">
@@ -25,7 +22,7 @@ function Header() {
 
                         <a href="/login">
                             <button className="loginButtonHeader">
-                                <span>Login</span>
+                                <span>Login / Register</span>
                             </button>
                         </a>
                     </div>

@@ -45,6 +45,7 @@ body {
   margin: 0 auto;
 }
 
+/* 
 .logoWrapper {
   font-family: "Parisienne", cursive;
   font-size: 24px;
@@ -52,36 +53,36 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-}
+} */
 
-.logoImgWrapper {
-  width: 27px;
+/* .logoImgWrapper {
+  width: 100px;
   display: flex;
   margin-right: 10px;
-}
+} */
 
-.logo1 {
+/* .logo1 {
   color: var(--primary);
 }
 
 .logo2 {
   color: #618dd4;
-}
+} */
 
 .btnsWrapper {
   display: flex;
 }
 
 .postAJobButton {
-  background: green;
+  background: #A9A9A9;
   padding: 5px 15px;
   border: none;
   outline: none;
   margin-left: 1rem;
   cursor: pointer;
-  border-radius: 2px;
-  height: 35px;
-  width: 120px;
+  border-radius: 60px;
+  height: 38px;
+  width: 130px;
   transition: all 0.5s;
 }
 
@@ -91,7 +92,7 @@ body {
   position: relative;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   transition: 0.5s;
 }
 
@@ -114,15 +115,16 @@ body {
 }
 
 .loginButtonHeader {
-  background: var(--primary);
-  padding: 5px 20px;
+  background: #000000;
+  /* var(--primary); */
+  padding: 5px 15px;
   border: none;
   outline: none;
   margin-left: 1rem;
   cursor: pointer;
-  border-radius: 2px;
-  height: 35px;
-  width: 90px;
+  border-radius: 50px;
+  height: 38px;
+  width: 150px;
   transition: all 0.5s;
 }
 
@@ -132,7 +134,7 @@ body {
   position: relative;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   transition: 0.5s;
 }
 
@@ -259,17 +261,51 @@ body {
 }
 
 /* HomePage */
+.page-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* .stats_btn {
+  padding: 4px 20px;
+  margin-top: -30px;
+} */
+
+
 
 .stats_btn {
-  padding: 5px 30px;
-  margin-top: -35px;
+  padding: 4px 10px;
+  margin-top: -30px;
+  width: 120px;
+  height: 40px;
+  font-size: 13px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 2.5px; */
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 65px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.stats_btn:hover {
+  background-color: #0E39EC;
+  /* background-color: #2EE59D; */
+  box-shadow: 0px 15px 20px rgba(14, 57, 236, 0.45);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 .job-listing {
   display: block;
-  border-radius: 4px;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
-  margin-bottom: 35px;
+  border-radius: 40px;
+  width: 700px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+  margin-bottom: 30px;
   background-color: #fff;
   position: relative;
   text-decoration: none;
@@ -279,16 +315,17 @@ body {
 
 .job-listing:hover {
   text-decoration: none;
+  border-radius: 25px;
   top: -1px;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 25%);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
 }
 
 .job-listing-details {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 35px;
-  padding-bottom: 32px;
+  padding: 30px;
+  padding-bottom: 20px;
 }
 
 .job-listing .job-listing-description {
@@ -308,15 +345,15 @@ body {
 }
 
 .job-listing .job-listing-description p {
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
   padding: 0;
   color: #666;
 }
 
 .job-listing .job-listing-footer {
   background-color: #f2f2f2;
-  padding: 20px 35px;
-  border-radius: 0 0 4px 4px;
+  padding: 15px 30px;
+  border-radius: 0 0 30px 30px;
   position: relative;
 }
 
@@ -347,19 +384,21 @@ body {
 
 .job-details-wrapper {
   background: #f5f7fa;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .job-details,
 .job-contact-details {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 40px;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
 }
 
 .job-header {
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
+  border: 2px solid #e8e8e8;
+  border-radius: 40px;
+  background-color: #F5F5F5;
 }
 
 .job-header h2 {
@@ -368,19 +407,77 @@ body {
 
 .job-header span {
   color: grey;
+  font-size: 16px;
 }
 
 .job-contact-details h5 {
   color: rgb(144, 144, 144);
 }
 
+.company-web {
+  color: #0E39EC !important;
+  font-size: 16px;
+  text-decoration: underline;
+
+}
+
 .job-contact-details p {
   color: rgb(20, 20, 20);
-  margin-left: 5px;
+  /* margin-left: 5px; */
+}
+
+
+
+.pill-tag {
+  pointer-events: none;
+  background-color: #EFF4FF;
+  border: none;
+  color: #0E39EC;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: -1px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.job-mode {
+  pointer-events: none;
+  background-color: #708090;
+
+  border: none;
+  color: #fff;
+  padding: 4px 13px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  border-radius: 100px;
 }
 
 .apply-btn {
+  color: rgb(255, 255, 255);
+  background-color: #0E39EC !important;
   border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: 640;
+
+}
+
+.apply-btn:hover {
+  background-color: #0E39EC;
+  /* background-color: #2EE59D; */
+  box-shadow: 0px 15px 20px rgba(14, 57, 236, 0.35);
+  color: #fff;
+  transform: translateY(-4px);
 }
 
 /* Footer */
@@ -432,10 +529,10 @@ footer {
 }
 
 .modalWrapper {
-  width: 75%;
+  width: 65%;
   height: 70vh;
   background: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 45px;
   position: relative;
   display: flex;
   z-index: 20;
@@ -514,6 +611,8 @@ footer {
   margin-left: 5%;
   background: rgb(241, 241, 241);
   margin-bottom: 15px;
+  border-radius: 45px;
+  border: 1px solid #A9A9A9;
 }
 
 .inputBox i {
@@ -550,12 +649,12 @@ footer {
   height: 50px;
   text-align: center;
   border: none;
+  /* background-image: linear-gradient(to left, #0e39ec, #213eee, #2e43ef, #3847f1, 
+  #404cf2, #4f50f2, #5b55f3, #6659f3, #765ef3, #8564f2, #916af2, #9d70f2); */
   background-size: 300% 100%;
-  background-image: linear-gradient(to right,
-      #25aae1,
-      #4481eb,
-      #04befe,
-      #3f86ed);
+  background-image: linear-gradient(to right, #4776E6 0%,
+      #8E54E9 51%,
+      #4776E6 100%);
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 
   border-radius: 50px;

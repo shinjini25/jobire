@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     
     'job.apps.JobConfig',
     'account.apps.AccountConfig',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
@@ -142,6 +143,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+CORS_ALLOWED_ORIGINS =[
+    'http://localhost:3000',
+    'https://127.0.0.1:3000',
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

@@ -45,8 +45,11 @@ def getJob(request, pk):
     job = get_object_or_404(Job, id=pk)
 
     serializer = JobSerializer(job, many=False)
+    
+    candidates = job.candidatesapplied.count()
+    
 
-    return Response(serializer.data)
+    return Response({'job': serializer.data, 'candidatesCount': candidates})
 
 
 @api_view(['POST'])
