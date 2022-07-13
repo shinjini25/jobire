@@ -114,6 +114,12 @@ body {
   right: 0;
 }
 
+.user-link span {
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
 .loginButtonHeader {
   background: #000000;
   /* var(--primary); */
@@ -125,7 +131,7 @@ body {
   border-radius: 50px;
   height: 38px;
   width: 150px;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 
 .loginButtonHeader span {
@@ -138,6 +144,7 @@ body {
   transition: 0.5s;
 }
 
+/* 
 .loginButtonHeader span:after {
   content: "\00bb";
   position: absolute;
@@ -154,7 +161,7 @@ body {
 .loginButtonHeader:hover span:after {
   opacity: 1;
   right: 0;
-}
+} */
 
 /* Loader */
 
