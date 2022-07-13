@@ -4,6 +4,7 @@ import Link from 'next/link'
 import JobItem from "./job/JobItem";
 import Pagination from 'react-js-pagination';
 import { useRouter } from 'next/router';
+import Filters from './layout/Filters';
 const Home = ({ data }) => {
     const { jobs, resPerPage, count } = data;
     const router = useRouter();
@@ -31,7 +32,7 @@ const Home = ({ data }) => {
         <div className="container container-fluid">
             <div className="row">
                 <div className="col-xl-3 col-lg-4">
-
+                    <Filters />
                 </div>
 
                 <div className="col-xl-9 col-lg-8 content-left-offset">

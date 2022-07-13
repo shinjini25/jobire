@@ -160,6 +160,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1671,6 +1687,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.job.migrations.0009_alter_job_experience_alter_job_mode",
+        "description": "backend.job.migrations.0009_alter_job_experience_alter_job_mode",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('job', '0008_alter_job_skills'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='job',\n            name='experience',\n            field=models.CharField(choices=[('No Experience', 'No Experience'), ('1 Year', 'One Year'), ('2 Years', 'Two Year'), ('3 Years and above', 'Three Year Plus')], default='No Experience', max_length=20),\n        ),",
+        "detail": "backend.job.migrations.0009_alter_job_experience_alter_job_mode",
+        "documentation": {}
+    },
+    {
         "label": "JobConfig",
         "kind": 6,
         "importPath": "backend.job.apps",
@@ -1684,7 +1709,7 @@
         "kind": 6,
         "importPath": "backend.job.filters",
         "description": "backend.job.filters",
-        "peekOfCode": "class JobsFilter(filters.FilterSet):\n    keyword = filters.CharFilter(field_name='title', lookup_expr='icontains')\n    location = filters.CharFilter(field_name='address', lookup_expr='icontains')\n    # mode = filters.CharFilter(field_name='address', lookup_expr='icontains')\n    min_salary = filters.NumberFilter(field_name=\"salary\" or 0, lookup_expr='gte')\n    max_salary = filters.NumberFilter(field_name=\"salary\" or 1000000, lookup_expr='lte')\n    class Meta:\n        model = Job\n        fields = ['keyword', 'location','education', 'jobType', 'experience', 'industry', 'min_salary', 'max_salary']",
+        "peekOfCode": "class JobsFilter(filters.FilterSet):\n    keyword = filters.CharFilter(field_name='title', lookup_expr='icontains')\n    location = filters.CharFilter(field_name='address', lookup_expr='icontains')\n    # mode = filters.CharFilter(field_name='address', lookup_expr='icontains')\n    min_salary = filters.NumberFilter(field_name=\"salary\" or 0, lookup_expr='gte')\n    max_salary = filters.NumberFilter(field_name=\"salary\" or 1000000, lookup_expr='lte')\n    class Meta:\n        model = Job\n        fields = ['keyword', 'location','education', 'jobType', 'experience', 'industry', 'min_salary', 'max_salary', 'mode']",
         "detail": "backend.job.filters",
         "documentation": {}
     },
@@ -1720,7 +1745,7 @@
         "kind": 6,
         "importPath": "backend.job.models",
         "description": "backend.job.models",
-        "peekOfCode": "class Experience(models.TextChoices):\n    NO_EXPERIENCE = 'No Experience'\n    ONE_YEAR = '1 Years'\n    TWO_YEAR = '2 Years'\n    THREE_YEAR_PLUS = '3 Years & above'\nclass Availability(models.TextChoices):\n    Immediately = 'Immediately'\n    IN_A_MONTH = 'In a Month'\nclass Mode(models.TextChoices):\n    WFH= 'Work from Home/Remote'",
+        "peekOfCode": "class Experience(models.TextChoices):\n    NO_EXPERIENCE = 'No Experience'\n    ONE_YEAR = '1 Year'\n    TWO_YEAR = '2 Years'\n    THREE_YEAR_PLUS = '3 Years and above'\nclass Availability(models.TextChoices):\n    Immediately = 'Immediately'\n    IN_A_MONTH = 'In a Month'\nclass Mode(models.TextChoices):\n    WFH= 'Work from Home/Remote'",
         "detail": "backend.job.models",
         "documentation": {}
     },
@@ -1729,7 +1754,7 @@
         "kind": 6,
         "importPath": "backend.job.models",
         "description": "backend.job.models",
-        "peekOfCode": "class Availability(models.TextChoices):\n    Immediately = 'Immediately'\n    IN_A_MONTH = 'In a Month'\nclass Mode(models.TextChoices):\n    WFH= 'Work from Home/Remote'\n    ON_SITE = 'On-site'\n    HYBRID_MODE = 'Hybrid Mode'\nclass Skills(models.TextChoices):\n    WEB_DEV= 'Web Development'\n    PHP = \"PHP\"",
+        "peekOfCode": "class Availability(models.TextChoices):\n    Immediately = 'Immediately'\n    IN_A_MONTH = 'In a Month'\nclass Mode(models.TextChoices):\n    WFH= 'Work from Home/Remote'\n    ON_SITE = 'Onsite'\n    HYBRID_MODE = 'Hybrid Mode'\nclass Skills(models.TextChoices):\n    WEB_DEV= 'Web Development'\n    PHP = \"PHP\"",
         "detail": "backend.job.models",
         "documentation": {}
     },
@@ -1738,7 +1763,7 @@
         "kind": 6,
         "importPath": "backend.job.models",
         "description": "backend.job.models",
-        "peekOfCode": "class Mode(models.TextChoices):\n    WFH= 'Work from Home/Remote'\n    ON_SITE = 'On-site'\n    HYBRID_MODE = 'Hybrid Mode'\nclass Skills(models.TextChoices):\n    WEB_DEV= 'Web Development'\n    PHP = \"PHP\"\n    SQL = \"SQL\"\n    JS = \"JavaScript\"\n    AN = \"Android Development\"",
+        "peekOfCode": "class Mode(models.TextChoices):\n    WFH= 'Work from Home/Remote'\n    ON_SITE = 'Onsite'\n    HYBRID_MODE = 'Hybrid Mode'\nclass Skills(models.TextChoices):\n    WEB_DEV= 'Web Development'\n    PHP = \"PHP\"\n    SQL = \"SQL\"\n    JS = \"JavaScript\"\n    AN = \"Android Development\"",
         "detail": "backend.job.models",
         "documentation": {}
     },

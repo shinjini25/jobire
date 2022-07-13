@@ -4,10 +4,11 @@ import Script from 'next/script';
 import Header from './Header'
 import Footer from './Footer'
 const Layout = ({ children, title = 'Jobire' }) => {
+    const message = `${title} -Jobire`;
     return (
         <div>
             <Head>
-                <title>{title} -Jobire</title>
+                <title>{message}</title>
             </Head>
 
             <Script

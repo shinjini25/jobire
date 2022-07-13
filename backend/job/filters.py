@@ -9,5 +9,5 @@ class JobsFilter(filters.FilterSet):
     max_salary = filters.NumberFilter(field_name="salary" or 1000000, lookup_expr='lte')
     class Meta:
         model = Job
-        fields = ['keyword', 'location','education', 'jobType', 'experience', 'industry', 'min_salary', 'max_salary']
+        fields = ['keyword', 'location','education', 'jobType', 'experience', 'industry', 'min_salary', 'max_salary', 'mode']
 

@@ -38,9 +38,9 @@ class Industry(models.TextChoices):
 
 class Experience(models.TextChoices):
     NO_EXPERIENCE = 'No Experience'
-    ONE_YEAR = '1 Years'
+    ONE_YEAR = '1 Year'
     TWO_YEAR = '2 Years'
-    THREE_YEAR_PLUS = '3 Years & above'
+    THREE_YEAR_PLUS = '3 Years and above'
 
 class Availability(models.TextChoices):
     Immediately = 'Immediately'
@@ -49,7 +49,7 @@ class Availability(models.TextChoices):
 
 class Mode(models.TextChoices):
     WFH= 'Work from Home/Remote'
-    ON_SITE = 'On-site'
+    ON_SITE = 'Onsite'
     HYBRID_MODE = 'Hybrid Mode'
     
 class Skills(models.TextChoices):

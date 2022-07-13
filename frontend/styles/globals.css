@@ -808,3 +808,9 @@ footer {
   border-color: grey;
   outline: 0;
 }
+
+.filters-sidebar {
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 45px;
+}
