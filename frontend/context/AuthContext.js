@@ -10,6 +10,8 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [error, setError] = useState(null);
+    const [updated, setUpdated] = useState(null);
+    const [uploaded, setUploaded] = useState(null);
 
     const router = useRouter();
 
@@ -100,7 +102,71 @@ export const AuthProvider = ({ children }) => {
             );
         }
     };
+    // Update user
+    const updateProfile = async (
+        { firstName, lastName, email, password },
+        access_token
+    ) => {
+        try {
+            setLoading(true);
 
+            const res = await axios.put(
+                `${process.env.API_URL}/api/me/update/`,
+                {
+                    first_name: firstName,
+                    last_name: lastName,
+                    email,
+                    password,
+                },
+                {
+                    headers: {
+                        Authorization: `Bearer ${access_token}`,
+                    },
+                }
+            );
+
+            if (res.data) {
+                setLoading(false);
+                setUpdated(true);
+                setUser(res.data);
+            }
+        } catch (error) {
+            console.log(error.response);
+            setLoading(false);
+            setError(
+                error.response &&
+                (error.response.data.detail || error.response.data.error)
+            );
+        }
+    };
+    // Upload Resume
+    const uploadResume = async (formData, access_token) => {
+        try {
+            setLoading(true);
+
+            const res = await axios.put(
+                `${process.env.API_URL}/api/upload/resume/`,
+                formData,
+                {
+                    headers: {
+                        Authorization: `Bearer ${access_token}`,
+                    },
+                }
+            );
+
+            if (res.data) {
+                setLoading(false);
+                setUploaded(true);
+            }
+        } catch (error) {
+            console.log(error.response);
+            setLoading(false);
+            setError(
+                error.response &&
+                (error.response.data.detail || error.response.data.error)
+            );
+        }
+    };
     // Logout user
     const logout = async () => {
         try {
@@ -134,10 +200,16 @@ export const AuthProvider = ({ children }) => {
                 user,
                 isAuthenticated,
                 error,
+                updated,
+                uploaded,
+                setUpdated,
+                setUploaded,
                 login,
                 logout,
                 register,
-                clearErrors
+                clearErrors,
+                updateProfile,
+                uploadResume,
             }}
         >
             {children}

@@ -37,7 +37,7 @@ const UpdateProfile = ({ access_token }) => {
 
         if (updated) {
             setUpdated(false);
-            router.push("/me");
+            router.push("/");
         }
     }, [error, user, updated]);
 
