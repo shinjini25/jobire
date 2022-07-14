@@ -1,5 +1,5 @@
-import Layout from '../components/layout/Layout';
-import Search from '../components/layout/Search';
+import Layout from '../components/layouts/Layout';
+import Search from '../components/layouts/Search';
 
 import axios from 'axios';
 

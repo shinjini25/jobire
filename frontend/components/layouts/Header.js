@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import AuthContext from '../../context/AuthContext';
 import { useState, useContext, useEffect } from "react";
 
@@ -10,13 +9,14 @@ function Header() {
     const logoutHandler = () => {
         logout();
     };
+    const imgUrl = "/images/jobirelogo.png";
     return (
         <div>
             <div className="navWrapper">
                 <div className="navContainer">
                     <Link href="/">
                         <div className="logoWrapper">
-                            <Image width="97" height="50" src="/images/jobirelogo.png" alt="" />
+                            <img width="97" height="50" src={imgUrl} alt="" />
 
                         </div>
                     </Link>

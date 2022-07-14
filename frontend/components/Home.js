@@ -4,7 +4,7 @@ import Link from 'next/link'
 import JobItem from "./job/JobItem";
 import Pagination from 'react-js-pagination';
 import { useRouter } from 'next/router';
-import Filters from './layout/Filters';
+import Filters from './layouts/Filters';
 const Home = ({ data }) => {
     const { jobs, resPerPage, count } = data;
     const router = useRouter();
@@ -47,7 +47,7 @@ const Home = ({ data }) => {
                             <Link href="/search">Go to Search</Link>
                         </div>
                     </div>
-                    {jobs && jobs.map((job) => <JobItem job={job} />)}
+                    {jobs && jobs.map((job) => <JobItem key={job.id} job={job} />)}
 
                     {resPerPage << count && (
                         <div className="d-flex mt-5 justify-content-center">

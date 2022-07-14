@@ -1,8 +1,8 @@
-import Layout from '../../components/layout/Layout';
+import Layout from '../../components/layouts/Layout';
 import Home from '../../components/Home';
 import JobDetails from '../../components/job/JobDetails';
 import axios from 'axios';
-import NotFound from '../../components/layout/NotFound';
+import NotFound from '../../components/layouts/NotFound';
 
 export default function jobDetailsPage({ job, candidatesCount, error }) {
     // console.log(job);

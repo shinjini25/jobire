@@ -49,7 +49,7 @@ const JobDetails = ({ job, candidatesCount }) => {
                             <div className="job-description mt-4">
                                 <h4 className="mt-2">Mode of Work</h4>
                                 <p>
-                                    <button class="job-mode"> {job.mode}</button>
+                                    <button className="job-mode"> {job.mode}</button>
                                 </p>
                             </div>
 
@@ -57,7 +57,7 @@ const JobDetails = ({ job, candidatesCount }) => {
                                 <h4 className=" mb-3">Skills Required</h4>
 
                                 <p>
-                                    {job.skills.map((skill) => <button class="pill-tag">{choices(skill)}</button>)}
+                                    {job.skills.map((skill) => <button key={skill} className="pill-tag">{choices(skill)}</button>)}
                                 </p>
 
                             </div>
@@ -127,7 +127,7 @@ const JobDetails = ({ job, candidatesCount }) => {
                         <div className="job-contact-details p-3">
                             <h4 className="my-4">Recruiter Details</h4>
                             <hr />
-                            <a href={`${job.website}`}><p class="company-web">Website</p></a>
+                            <a href={`${job.website}`}><p className="company-web">Website</p></a>
 
                             <h5>Email Address</h5>
                             <p>{job.email}</p>

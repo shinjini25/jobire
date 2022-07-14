@@ -1,4 +1,4 @@
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layouts/Layout";
 import Register from "../components/auth/Register";
 
 export default function LoginPage() {
