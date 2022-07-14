@@ -1,8 +1,30 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import Link from 'next/link';
 import moment from 'moment'
 
-const JobDetails = ({ job, candidatesCount }) => {
+import JobContext from "../../context/JobContext";
+import { toast } from "react-toastify";
+
+const JobDetails = ({ job, candidatesCount, access_token }) => {
+
+    const { applyToJob, checkJobApplied, applied, clearErrors, error, loading } =
+        useContext(JobContext);
+
+    useEffect(() => {
+
+        if (error) {
+            toast.error(error);
+            clearErrors();
+        }
+
+        checkJobApplied(job.id, access_token);
+    }, [error]);
+
+    const applyToJobHandler = () => {
+        applyToJob(job.id, access_token);
+    };
+
+
     function choices(id) {
         var skills = [(1, 'Web Development'), (2, 'PHP'), (3, 'SQL'), (4, 'JavaScript'), (5, 'Android Development'),
         (6, "IOS Development"), (7, "Java"), (8, "C/C++"), (9, "Python"), (10, "Cloud"), (11, "Swift"),
@@ -11,6 +33,11 @@ const JobDetails = ({ job, candidatesCount }) => {
         (20, "Cyber Security"), (21, "Project Management"), (22, "UI/UX"),];
         return skills[id];
     }
+
+    const d1 = moment(job.lastDate);
+    const d2 = moment(Date.now());
+    const isLastDatePassed = d1.diff(d2, "days") < 0 ? true : false
+
     return (
         <div className="job-details-wrapper">
             <div className="container container-fluid">
@@ -30,9 +57,25 @@ const JobDetails = ({ job, candidatesCount }) => {
 
                                 <div className="mt-3">
                                     <span>
-                                        <button className="px-4 py-2 apply-btn">
-                                            Apply Now
-                                        </button>
+                                        {loading ? (
+                                            "Loading..."
+                                        ) : applied ? (
+                                            <button
+                                                disabled
+                                                className="btn btn-success px-4 py-2 apply-btn"
+                                            >
+                                                <i aria-hidden className="fas fa-check"></i>{" "}
+                                                {loading ? "Loading" : "Applied"}
+                                            </button>
+                                        ) : (
+                                            <button
+                                                className="btn btn-primary px-4 py-2 apply-btn"
+                                                onClick={applyToJobHandler}
+                                                disabled={isLastDatePassed}
+                                            >
+                                                {loading ? "Loading..." : "Apply Now"}
+                                            </button>
+                                        )}
                                         <span className="ml-4 text-success">
                                             <b>{candidatesCount}</b> candidate(s) have applied to this job.
                                         </span>
@@ -139,14 +182,18 @@ const JobDetails = ({ job, candidatesCount }) => {
                             <p>{job.lastDate.substring(0, 10)}</p>
                         </div>
 
-                        <div className="mt-5 p-0">
-                            <div className="alert alert-danger">
-                                <h5>Note:</h5>
-                                You can no longer apply to this job. This job is expired. Last
-                                date to apply for this job was: <b>15-2-2022</b>
-                                <br /> Checkout others job on Jobbee.
+
+                        {isLastDatePassed && (
+                            <div className="mt-5 p-0">
+                                <div className="alert alert-danger">
+                                    <h5>Note:</h5>
+                                    You can no longer apply to this job. This job is expired. Last
+                                    date to apply for this job was:{" "}
+                                    <b>{job.lastDate.substring(0, 10)}</b>
+                                    <br /> Checkout others job on Jobbee.
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </div>
             </div>

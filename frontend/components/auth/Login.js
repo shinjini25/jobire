@@ -80,7 +80,7 @@ const Login = () => {
                                 </button>
                             </div>
                             <p style={{ textDecoration: "none" }} className="signup">
-                                New to Jobbee? <Link href="/register">Create an account</Link>
+                                New to Jobire? <Link href="/register">Create an account</Link>
                             </p>
                         </form>
                     </div>

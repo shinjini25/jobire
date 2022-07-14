@@ -135,12 +135,12 @@ def applyToJob(request, pk):
         return Response({ 'error': 'Please upload your resume first' }, status=status.HTTP_400_BAD_REQUEST)
 
     if job.lastDate < timezone.now():
-        return Response({ 'error': 'You can not apply to this job. Date is over' }, status=status.HTTP_400_BAD_REQUEST)
+        return Response({ 'error': 'You can not apply to this job. Last Date for this job is passed' }, status=status.HTTP_400_BAD_REQUEST)
 
     alreadyApplied = job.candidatesapplied.filter(user=user).exists()
 
     if alreadyApplied:
-        return Response({ 'error': 'You have already apply to this job.' }, status=status.HTTP_400_BAD_REQUEST)
+        return Response({ 'error': 'You have already applied to this job.' }, status=status.HTTP_400_BAD_REQUEST)
 
 
     jobApplied = CandidatesApplied.objects.create(

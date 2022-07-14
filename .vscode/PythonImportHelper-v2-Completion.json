@@ -1835,7 +1835,7 @@
         "kind": 5,
         "importPath": "backend.job.urls",
         "description": "backend.job.urls",
-        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats'),\n    path('jobs/<str:pk>/apply', views.applyToJob, name =\"apply_job\"),\n    path('me/jobs/applied/', views.getJobsApplied, name =\"get_applied_jobs\"),\n    path('jobs/<str:pk>/check', views.isApplied, name =\"check_job_applied\"),",
+        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats'),\n    path('jobs/<str:pk>/apply/', views.applyToJob, name =\"apply_job\"),\n    path('me/jobs/applied/', views.getJobsApplied, name =\"get_applied_jobs\"),\n    path('jobs/<str:pk>/check/', views.isApplied, name =\"check_job_applied\"),",
         "detail": "backend.job.urls",
         "documentation": {}
     },
@@ -1898,7 +1898,7 @@
         "kind": 2,
         "importPath": "backend.job.views",
         "description": "backend.job.views",
-        "peekOfCode": "def applyToJob(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)\n    if user.userprofile.resume == '':\n        return Response({ 'error': 'Please upload your resume first' }, status=status.HTTP_400_BAD_REQUEST)\n    if job.lastDate < timezone.now():\n        return Response({ 'error': 'You can not apply to this job. Date is over' }, status=status.HTTP_400_BAD_REQUEST)\n    alreadyApplied = job.candidatesapplied.filter(user=user).exists()\n    if alreadyApplied:\n        return Response({ 'error': 'You have already apply to this job.' }, status=status.HTTP_400_BAD_REQUEST)",
+        "peekOfCode": "def applyToJob(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)\n    if user.userprofile.resume == '':\n        return Response({ 'error': 'Please upload your resume first' }, status=status.HTTP_400_BAD_REQUEST)\n    if job.lastDate < timezone.now():\n        return Response({ 'error': 'You can not apply to this job. Last Date for this job is passed' }, status=status.HTTP_400_BAD_REQUEST)\n    alreadyApplied = job.candidatesapplied.filter(user=user).exists()\n    if alreadyApplied:\n        return Response({ 'error': 'You have already applied to this job.' }, status=status.HTTP_400_BAD_REQUEST)",
         "detail": "backend.job.views",
         "documentation": {}
     },
