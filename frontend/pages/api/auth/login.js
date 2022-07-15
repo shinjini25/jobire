@@ -21,7 +21,6 @@ export default async (req, res) => {
             );
 
             if (response.data.access) {
-                console.log("-------------into header setting--------------")
                 res.setHeader("Set-Cookie", [
                     cookie.serialize("access", response.data.access, {
                         httpOnly: true,
@@ -37,7 +36,7 @@ export default async (req, res) => {
                     success: true,
                 });
             } else {
-                console.log("Failed");
+                console.log("Authentication Failed");
                 res.status(response.status).json({
                     error: "Authentication failed",
                 });

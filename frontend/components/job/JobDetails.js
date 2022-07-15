@@ -4,13 +4,29 @@ import moment from 'moment'
 
 import JobContext from "../../context/JobContext";
 import { toast } from "react-toastify";
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
+
+mapboxgl.accessToken = process.env.MAPBOXGL_ACCESS_TOKEN;
 
 const JobDetails = ({ job, candidatesCount, access_token }) => {
 
     const { applyToJob, checkJobApplied, applied, clearErrors, error, loading } =
         useContext(JobContext);
 
+
     useEffect(() => {
+        const cooridnates = job.point.split("(")[1].replace(")", "").split(" ");
+
+        // Create map and set the center point
+        const map = new mapboxgl.Map({
+            container: "job-map",
+            style: "mapbox://styles/mapbox/streets-v11",
+            center: cooridnates,
+            zoom: 12,
+        });
+
+        // Add market on map
+        new mapboxgl.Marker().setLngLat(cooridnates).addTo(map);
 
         if (error) {
             toast.error(error);
@@ -96,21 +112,21 @@ const JobDetails = ({ job, candidatesCount, access_token }) => {
                                 </p>
                             </div>
 
-                            <div className="job-description mt-3">
+                            {job.skills.length > 0 && (<div className="job-description mt-3">
                                 <h4 className=" mb-3">Skills Required</h4>
 
                                 <p>
                                     {job.skills.map((skill) => <button key={skill} className="pill-tag">{choices(skill)}</button>)}
                                 </p>
 
-                            </div>
+                            </div>)}
 
-                            <div className="job-description mt-3">
+                            {job.availablity && (<div className="job-description mt-3">
                                 <h4 className="mt-2">Availability</h4>
                                 <p>
                                     {job.availablity}
                                 </p>
-                            </div>
+                            </div>)}
 
                             <div className="job-summary">
                                 <h4 className="mt-5 mb-4">Job Summary</h4>
@@ -151,17 +167,18 @@ const JobDetails = ({ job, candidatesCount, access_token }) => {
                                             <td>:</td>
                                             <td>{job.duration}</td>
                                         </tr>
-                                        <tr>
+                                        {job.availablity && (<tr>
                                             <td>Starts</td>
                                             <td>:</td>
                                             <td>{job.availablity}</td>
-                                        </tr>
+                                        </tr>)}
                                     </tbody>
                                 </table>
                             </div>
 
                             <div className="job-location">
                                 <h4 className="mt-5 mb-4">Job Location</h4>
+                                <div id="job-map" style={{ height: 520, width: "100%" }} />
                             </div>
                         </div>
                     </div>

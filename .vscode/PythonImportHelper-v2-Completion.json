@@ -1934,7 +1934,7 @@
         "kind": 2,
         "importPath": "backend.job.views",
         "description": "backend.job.views",
-        "peekOfCode": "def getCandidatesApplied(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)\n    # only creator of the job object is allowed to see candidates\n    if job.user != user:\n        return Response({ 'error': 'You can not acces this job' }, status=status.HTTP_403_FORBIDDEN)\n    candidates = job.candidatesapplied.all()\n    serializer = CandidatesAppliedSerializer(candidates, many=True)\n    return Response(serializer.data)",
+        "peekOfCode": "def getCandidatesApplied(request, pk):\n    user = request.user\n    job = get_object_or_404(Job, id=pk)\n    if job.user != user:\n        return Response({ 'error': 'You can not acces this job' }, status=status.HTTP_403_FORBIDDEN)\n    candidates = job.candidatesapplied.all()\n    serializer = CandidatesAppliedSerializer(candidates, many=True)\n    return Response(serializer.data)",
         "detail": "backend.job.views",
         "documentation": {}
     },

@@ -43,14 +43,10 @@ def getAllJobs(request):
 @api_view(['GET'])
 def getJob(request, pk):
     job = get_object_or_404(Job, id=pk)
-
     serializer = JobSerializer(job, many=False)
     
     candidates = job.candidatesapplied.count()
-    
-
     return Response({'job': serializer.data, 'candidatesCount': candidates})
-
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -83,7 +79,10 @@ def updateJob(request, pk):
     job.experience = request.data['experience']
     job.salary = request.data['salary']
     job.positions = request.data['positions']
-    job.company = request.data['company']
+    job.availablity = request.data['availablity']
+    job.mode = request.data['mode']
+    job.duration = request.data['duration']
+    job.website = request.data['website']
 
     job.save()
 
@@ -196,7 +195,7 @@ def getCandidatesApplied(request, pk):
 
     user = request.user
     job = get_object_or_404(Job, id=pk)
-    # only creator of the job object is allowed to see candidates
+
     if job.user != user:
         return Response({ 'error': 'You can not acces this job' }, status=status.HTTP_403_FORBIDDEN)
 

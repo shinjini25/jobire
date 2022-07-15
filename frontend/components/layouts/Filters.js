@@ -223,7 +223,7 @@ const Filters = () => {
                     onClick={(e) => handleClick(e.target)}
                 />
                 <label className="form-check-label" htmlFor="check15">
-                    Remote / WFH
+                    Remote/WFH
                 </label>
             </div>
 

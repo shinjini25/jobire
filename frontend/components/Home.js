@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import Filters from './layouts/Filters';
 const Home = ({ data }) => {
     const { jobs, resPerPage, count } = data;
+
     const router = useRouter();
     let { page = 1, keyword } = router.query;
     page = Number(page);
@@ -37,14 +38,19 @@ const Home = ({ data }) => {
 
                 <div className="col-xl-9 col-lg-8 content-left-offset">
                     <div className="my-5">
-                        <h4 className="page-title">Latest Jobs</h4>
-                        <Link href="/stats">
+                        <h4 className="page-title">
+                            {keyword
+                                ? jobs.length > 1 ? `${jobs.length} Results for '${keyword}'` : `${jobs.length} Result for '${keyword}'`
+                                : "Latest Jobs"}
+                        </h4>
+                        <Link href="/search">
                             <button className="float-right stats_btn">
-                                Get Topic stats
+                                Search Jobs
                             </button>
                         </Link>
+
                         <div className="d-block">
-                            <Link href="/search">Go to Search</Link>
+                            <Link href="/stats"><u className="text-success">Get topic specific statistics</u></Link>
                         </div>
                     </div>
                     {jobs && jobs.map((job) => <JobItem key={job.id} job={job} />)}

@@ -21,7 +21,7 @@ function Header() {
                         </div>
                     </Link>
                     <div className="btnsWrapper">
-                        <a href="/employeer/jobs/new">
+                        <a href="/employer/jobs/new">
                             <button className="postAJobButton mt-1">
                                 <span>Post A Job</span>
                             </button>
@@ -37,7 +37,7 @@ function Header() {
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="dropDownMenuButton" >
 
-                                    <Link href="/employeer/jobs">
+                                    <Link href="/employer/jobs">
                                         <a className="dropdown-item">My Jobs</a>
                                     </Link>
 

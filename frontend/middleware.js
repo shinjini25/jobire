@@ -8,6 +8,7 @@ const allowedParams = [
     "experience",
     "salary",
     "jobType",
+    "mode",
 ];
 
 export async function middleware(req) {
