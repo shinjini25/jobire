@@ -6,7 +6,6 @@ import JobsApplied from "../../components/job/JobsApplied";
 import { isAuthenticatedUser } from "../../utils/isAuthenticated";
 
 export default function JobsAppliedPage({ jobs }) {
-    console.log(jobs);
     return (
 
         <Layout title="Jobs Applied">

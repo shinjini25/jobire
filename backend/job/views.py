@@ -5,7 +5,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.db.models import Avg, Min, Max, Count
 from rest_framework.pagination import PageNumberPagination
+from django.http import JsonResponse
 
+from .forms import SkillsForm
 from rest_framework.permissions import IsAuthenticated
 
 # from .serializers import CandidatesAppliedSerializer, JobSerializer
@@ -59,7 +61,11 @@ def newJob(request):
     serializer = JobSerializer(job, many=False)
     return Response(serializer.data)
 
-
+@api_view(['GET'])
+def showSkills(request):
+    form = SkillsForm()
+    return JsonResponse({'skillsForm': form})
+    
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def updateJob(request, pk):
@@ -83,6 +89,7 @@ def updateJob(request, pk):
     job.mode = request.data['mode']
     job.duration = request.data['duration']
     job.website = request.data['website']
+    job.skills = request.data['skills']
 
     job.save()
 

@@ -5,7 +5,6 @@ import axios from 'axios';
 
 
 export default function Index({ data }) {
-    console.log("jobs", data);
     return (
         <Layout title='Search jobs'>
             <Search />

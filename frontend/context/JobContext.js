@@ -138,7 +138,6 @@ export const JobProvider = ({ children }) => {
             );
         }
     };
-
     // Delete job
     const deleteJob = async (id, access_token) => {
         try {
@@ -189,6 +188,7 @@ export const JobProvider = ({ children }) => {
                 setCreated,
                 setDeleted,
                 clearErrors,
+
             }}
         >
             {children}

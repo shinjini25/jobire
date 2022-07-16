@@ -10,6 +10,7 @@ import {
     experienceOptions,
     availablityOptions,
     modeOptions,
+    skillOptions,
 } from "./data";
 
 const UpdateJob = ({ job, access_token }) => {
@@ -29,9 +30,34 @@ const UpdateJob = ({ job, access_token }) => {
     const [duration, setDuration] = useState("");
     const [company, setCompany] = useState("");
     const [website, setWebsite] = useState("");
+    const [skills, setSkills] = useState([]);
 
     const { clearErrors, error, loading, updated, updateJob, setUpdated } =
         useContext(JobContext);
+
+
+    var expanded = false;
+
+    function showCheckboxes() {
+        if (typeof document !== 'undefined') {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+
+    }
+
+    function addSkill(id) {
+        if (typeof document !== 'undefined') {
+            skills.push(id.toString());
+        }
+
+    }
 
     useEffect(() => {
 
@@ -86,11 +112,10 @@ const UpdateJob = ({ job, access_token }) => {
             availablity,
             mode,
             duration,
-            website
+            website,
+            skills,
 
         };
-
-        console.log(data);
 
         updateJob(job.id, data, access_token);
     };
@@ -306,7 +331,21 @@ const UpdateJob = ({ job, access_token }) => {
                                     </select>
                                 </div>
                             </div>
+                            <div class="multiselect">
 
+                                <div className="selectBox" onClick={function () { showCheckboxes() }}>
+                                    <select>
+                                        <option>Select the skills</option>
+                                    </select>
+                                    <div className="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                    {skillOptions.map((option) => (
+                                        <label htmlFor={option[0]}>
+                                            <input type="checkbox" id={option[0]} onClick={function () { addSkill(option[0]) }} />{option[1]}</label>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
 
                         <div className="col text-center mt-3">

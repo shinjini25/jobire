@@ -524,6 +524,15 @@
         "documentation": {}
     },
     {
+        "label": "dj_database_url",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dj_database_url",
+        "description": "dj_database_url",
+        "detail": "dj_database_url",
+        "documentation": {}
+    },
+    {
         "label": "TokenObtainPairView",
         "importPath": "rest_framework_simplejwt.views",
         "description": "rest_framework_simplejwt.views",
@@ -617,6 +626,14 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "geocoder",
         "kind": 6,
         "isExtraImport": true,
@@ -698,11 +715,11 @@
         "documentation": {}
     },
     {
-        "label": "exception_handler",
-        "importPath": "rest_framework.views",
-        "description": "rest_framework.views",
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
         "isExtraImport": true,
-        "detail": "rest_framework.views",
+        "detail": "django.http",
         "documentation": {}
     },
     {
@@ -711,6 +728,14 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "exception_handler",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
         "documentation": {}
     },
     {
@@ -1304,7 +1329,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\ndotenv.read_dotenv()\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['localhost', '127.0.0.1']\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\ndotenv.read_dotenv()\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\n# DEBUG = True\nDEBUG = os.environ.get('DEBUG') == 'True'\nALLOWED_HOSTS = [ 'jobire.herokuapp.com/','localhost', '127.0.0.1']",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1313,7 +1338,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-l$q(#+fez)b)zsn+kf$^j=d!p%8at(24&kq^3(%movp46%s_h('\n# SECURITY WARNING: don't run with debug turned on in production!\n# DEBUG = True\nDEBUG = os.environ.get('DEBUG') == 'True'\nALLOWED_HOSTS = [ 'jobire.herokuapp.com/','localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1322,7 +1347,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = os.environ.get('DEBUG') == 'True'\nALLOWED_HOSTS = [ 'jobire.herokuapp.com/','localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1331,7 +1356,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "peekOfCode": "ALLOWED_HOSTS = [ 'jobire.herokuapp.com/','localhost', '127.0.0.1']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1349,7 +1374,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "peekOfCode": "MIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    \"whitenoise.middleware.WhiteNoiseMiddleware\",\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1390,6 +1415,24 @@
         "documentation": {}
     },
     {
+        "label": "db_from_env",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "db_from_env = dj_database_url.config(conn_max_age=600)\nDATABASES['default'].update(db_from_env)\nDATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES['default']['ENGINE']",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'\nAUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
         "label": "AUTH_PASSWORD_VALIDATORS",
         "kind": 5,
         "importPath": "backend.backend.settings",
@@ -1421,7 +1464,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1430,7 +1473,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_TMP = os.path.join(BASE_DIR, 'static')",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1439,7 +1482,7 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_TMP = os.path.join(BASE_DIR, 'static')\n# Static files (CSS, JavaScript, Images)",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1448,7 +1491,34 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "USE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
+        "peekOfCode": "USE_TZ = True\nCORS_ALLOWED_ORIGINS =[\n    'http://localhost:3000',\n    'https://127.0.0.1:3000',\n]\nSTATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_TMP = os.path.join(BASE_DIR, 'static')\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_STORAGE",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "STATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_TMP = os.path.join(BASE_DIR, 'static')\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_TMP = os.path.join(BASE_DIR, 'static')\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_TMP",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "STATIC_TMP = os.path.join(BASE_DIR, 'static')\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nAWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1457,7 +1527,25 @@
         "kind": 5,
         "importPath": "backend.backend.settings",
         "description": "backend.backend.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nAWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')\nAWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')\nAWS_S3_SIGNATURE_VERSION = 's3v4'\nAWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')\nAWS_S3_FILE_OVERWRITE = False\nAWS_DEFAULT_ACL = None",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nAWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')\nAWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')\nAWS_S3_SIGNATURE_VERSION = 's3v4'\nAWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]\nMEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nAWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')\nAWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')\nAWS_S3_SIGNATURE_VERSION = 's3v4'\nAWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')\nAWS_S3_FILE_OVERWRITE = False",
+        "detail": "backend.backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "backend.backend.settings",
+        "description": "backend.backend.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nAWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')\nAWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')\nAWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')\nAWS_S3_SIGNATURE_VERSION = 's3v4'\nAWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')\nAWS_S3_FILE_OVERWRITE = False\nAWS_DEFAULT_ACL = None",
         "detail": "backend.backend.settings",
         "documentation": {}
     },
@@ -1714,6 +1802,24 @@
         "documentation": {}
     },
     {
+        "label": "SkillsForm",
+        "kind": 6,
+        "importPath": "backend.job.forms",
+        "description": "backend.job.forms",
+        "peekOfCode": "class SkillsForm(forms.Form):\n    options = forms.MultipleChoiceField(choices=FAVORITE_COLORS_CHOICES,)",
+        "detail": "backend.job.forms",
+        "documentation": {}
+    },
+    {
+        "label": "FAVORITE_COLORS_CHOICES",
+        "kind": 5,
+        "importPath": "backend.job.forms",
+        "description": "backend.job.forms",
+        "peekOfCode": "FAVORITE_COLORS_CHOICES = [\n        ('WEB_DEV', 'Web Development'),\n    (\"PHP\", \"PHP\"),\n   ( \"SQL\" , \"SQL\"),\n    (\"JS\" , \"JavaScript\"),\n    ( \"AN\" , \"Android Development\"),\n]\nclass SkillsForm(forms.Form):\n    options = forms.MultipleChoiceField(choices=FAVORITE_COLORS_CHOICES,)",
+        "detail": "backend.job.forms",
+        "documentation": {}
+    },
+    {
         "label": "JobType",
         "kind": 6,
         "importPath": "backend.job.models",
@@ -1835,7 +1941,7 @@
         "kind": 5,
         "importPath": "backend.job.urls",
         "description": "backend.job.urls",
-        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats'),\n    path('jobs/<str:pk>/apply/', views.applyToJob, name =\"apply_job\"),\n    path('me/jobs/applied/', views.getJobsApplied, name =\"get_applied_jobs\"),\n    path('jobs/<str:pk>/check/', views.isApplied, name =\"check_job_applied\"),",
+        "peekOfCode": "urlpatterns = [\n    path('jobs/', views.getAllJobs, name='jobs'),\n    path('jobs/new/', views.newJob, name='new_job'),\n    path('jobs/skills/', views.showSkills, name= \"skills_form\"),\n    path('jobs/<str:pk>/', views.getJob, name='job'),\n    path('jobs/<str:pk>/update/', views.updateJob, name='update_job'),\n    path('jobs/<str:pk>/delete/', views.deleteJob, name='delete_job'),\n    path('stats/<str:topic>/', views.getTopicStats, name='get_topic_stats'),\n    path('jobs/<str:pk>/apply/', views.applyToJob, name =\"apply_job\"),\n    path('me/jobs/applied/', views.getJobsApplied, name =\"get_applied_jobs\"),",
         "detail": "backend.job.urls",
         "documentation": {}
     },
@@ -1862,7 +1968,16 @@
         "kind": 2,
         "importPath": "backend.job.views",
         "description": "backend.job.views",
-        "peekOfCode": "def newJob(request):\n    request.data['user'] = request.user\n    data = request.data\n    job = Job.objects.create(**data)\n    serializer = JobSerializer(job, many=False)\n    return Response(serializer.data)\n@api_view(['PUT'])\n@permission_classes([IsAuthenticated])\ndef updateJob(request, pk):\n    job = get_object_or_404(Job, id=pk)",
+        "peekOfCode": "def newJob(request):\n    request.data['user'] = request.user\n    data = request.data\n    job = Job.objects.create(**data)\n    serializer = JobSerializer(job, many=False)\n    return Response(serializer.data)\n@api_view(['GET'])\ndef showSkills(request):\n    form = SkillsForm()\n    return JsonResponse({'skillsForm': form})",
+        "detail": "backend.job.views",
+        "documentation": {}
+    },
+    {
+        "label": "showSkills",
+        "kind": 2,
+        "importPath": "backend.job.views",
+        "description": "backend.job.views",
+        "peekOfCode": "def showSkills(request):\n    form = SkillsForm()\n    return JsonResponse({'skillsForm': form})\n@api_view(['PUT'])\n@permission_classes([IsAuthenticated])\ndef updateJob(request, pk):\n    job = get_object_or_404(Job, id=pk)\n    if(job.user != request.user):\n        return Response({'Message': \"You are not authorized to perform such this action\"}, status = status.HTTP_403_FORBIDDEN)\n    job.title = request.data['title']",
         "detail": "backend.job.views",
         "documentation": {}
     },

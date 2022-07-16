@@ -5,7 +5,6 @@ import axios from 'axios';
 import NotFound from '../../components/layouts/NotFound';
 
 export default function jobDetailsPage({ job, candidatesCount, access_token, error }) {
-    // console.log(job);
     if (error?.includes("Not found")) return <NotFound />;
     return (
         <Layout title={job.title}>
@@ -18,13 +17,12 @@ export default function jobDetailsPage({ job, candidatesCount, access_token, err
 export async function getServerSideProps({ req, params }) {
     try {
         const res = await axios.get(`${process.env.API_URL}/api/jobs/${params.id}/`);
-        console.log(res.data);
         const job = res.data.job;
         const candidatesCount = res.data.candidatesCount
 
         const access_token = req.cookies.access || '';
 
-        return { props: { job, candidatesCount, access_token } }
+        return { props: { job, candidatesCount, access_token, } }
     }
     catch (e) {
         return { props: { error: e.response.data.detail } }

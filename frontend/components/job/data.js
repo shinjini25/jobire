@@ -29,3 +29,28 @@ export const modeOptions = [
     "Onsite",
     "Hybrid Mode",
 ];
+
+export const skillOptions = [
+    [1, "Web Development"],
+    [2, "PHP"],
+    [3, "SQL"],
+    [4, "JavaScript"],
+    [5, "Android Development"],
+    [6, "IOS Development"],
+    [7, "Java"],
+    [8, "C/C++"],
+    [9, "Python"],
+    [10, "Cloud"],
+    [11, "Swift"],
+    [12, "Database Management"],
+    [13, "Network Security/Management"],
+    [14, "Dart"],
+    [15, "Image Processing"],
+    [16, "Deep Learning"],
+    [17, "Artificial Intelligence"],
+    [18, "Business Analytics"],
+    [19, "Blockchain"],
+    [20, "Cyber Security"],
+    [21, "Project Management"],
+    [22, "UI/UX"],
+];

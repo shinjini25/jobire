@@ -4,7 +4,8 @@ import moment from 'moment'
 
 import JobContext from "../../context/JobContext";
 import { toast } from "react-toastify";
-import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
+// import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
+import * as mapboxgl from 'mapbox-gl';
 
 mapboxgl.accessToken = process.env.MAPBOXGL_ACCESS_TOKEN;
 
@@ -15,6 +16,7 @@ const JobDetails = ({ job, candidatesCount, access_token }) => {
 
 
     useEffect(() => {
+
         const cooridnates = job.point.split("(")[1].replace(")", "").split(" ");
 
         // Create map and set the center point
@@ -42,12 +44,15 @@ const JobDetails = ({ job, candidatesCount, access_token }) => {
 
 
     function choices(id) {
+
         var skills = [(1, 'Web Development'), (2, 'PHP'), (3, 'SQL'), (4, 'JavaScript'), (5, 'Android Development'),
         (6, "IOS Development"), (7, "Java"), (8, "C/C++"), (9, "Python"), (10, "Cloud"), (11, "Swift"),
         (12, "Database Management"), (13, "Network Security/Management"), (14, "Dart"), (15, "Image Processing"),
         (16, "Deep Learning"), (17, "Artificial Intelligence"), (18, "Business Analytics"), (19, "Blockchain"),
-        (20, "Cyber Security"), (21, "Project Management"), (22, "UI/UX"),];
+        (20, "Cyber Security"), (21, "Project Management"), (22, "UI UX")];
+
         return skills[id];
+
     }
 
     const d1 = moment(job.lastDate);
@@ -187,7 +192,10 @@ const JobDetails = ({ job, candidatesCount, access_token }) => {
                         <div className="job-contact-details p-3">
                             <h4 className="my-4">Recruiter Details</h4>
                             <hr />
-                            <a href={`${job.website}`}><p className="company-web">Website</p></a>
+                            {job.website && (<a href={job.website} >
+                                <p className="company-web">Website</p>
+                            </a>)}
+
 
                             <h5>Email Address</h5>
                             <p>{job.email}</p>

@@ -25,23 +25,20 @@ export const AuthProvider = ({ children }) => {
     const login = async ({ username, password }) => {
         try {
             setLoading(true);
-            console.log("till here");
 
             const res = await axios.post("/api/auth/login", {
                 username,
                 password,
             })
-            console.log(res);
 
             if (res.data.success) {
-                console.log("_____SUCCESS____");
+
                 loadUser();
                 setIsAuthenticated(true);
                 setLoading(false);
                 router.push("/");
             }
         } catch (error) {
-            console.log(error);
             setLoading(false);
             setError(
                 error.response &&
@@ -62,14 +59,12 @@ export const AuthProvider = ({ children }) => {
                 password,
             });
 
-            console.log(res.data);
-
             if (res.data.message) {
                 setLoading(false);
                 router.push("/login");
             }
         } catch (error) {
-            console.log(error.response);
+
             setLoading(false);
             setError(
                 error.response &&
@@ -131,7 +126,6 @@ export const AuthProvider = ({ children }) => {
                 setUser(res.data);
             }
         } catch (error) {
-            console.log(error.response);
             setLoading(false);
             setError(
                 error.response &&
@@ -159,7 +153,6 @@ export const AuthProvider = ({ children }) => {
                 setUploaded(true);
             }
         } catch (error) {
-            console.log(error.response);
             setLoading(false);
             setError(
                 error.response &&

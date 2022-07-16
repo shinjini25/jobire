@@ -10,6 +10,7 @@ import {
     experienceOptions,
     availablityOptions,
     modeOptions,
+    skillOptions,
 } from "./data";
 
 const NewJob = ({ access_token }) => {
@@ -28,9 +29,33 @@ const NewJob = ({ access_token }) => {
     const [duration, setDuration] = useState("");
     const [company, setCompany] = useState("");
     const [website, setWebsite] = useState("");
+    const [skills, setSkills] = useState([]);
 
     const { clearErrors, error, loading, created, newJob, setCreated } =
         useContext(JobContext);
+
+    var expanded = false;
+
+    function showCheckboxes() {
+        if (typeof document !== 'undefined') {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+
+    }
+
+    function addSkill(id) {
+        if (typeof document !== 'undefined') {
+            skills.push(id.toString());
+        }
+
+    }
 
     useEffect(() => {
         if (error) {
@@ -40,6 +65,7 @@ const NewJob = ({ access_token }) => {
 
         if (created) {
             setCreated(false);
+
             toast.success("Job Posted successfully.");
         }
     }, [error, created]);
@@ -62,11 +88,10 @@ const NewJob = ({ access_token }) => {
             availablity,
             mode,
             duration,
-            website
+            website,
+            skills,
 
         };
-
-        console.log(data);
 
         newJob(data, access_token);
     };
@@ -180,6 +205,8 @@ const NewJob = ({ access_token }) => {
                                 </div>
 
                             </div>
+
+
                         </div>
                         <div className="col-12 col-md-6 ml-4 mt-4 mt-md-0 ml-md-0">
                             <div className="boxWrapper">
@@ -283,14 +310,30 @@ const NewJob = ({ access_token }) => {
                                 </div>
                             </div>
 
-                        </div>
+                            <div class="multiselect">
 
+                                <div className="selectBox" onClick={function () { showCheckboxes() }}>
+                                    <select>
+                                        <option>Select the skills</option>
+                                    </select>
+                                    <div className="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                    {skillOptions.map((option) => (
+                                        <label htmlFor={option[0]}>
+                                            <input type="checkbox" id={option[0]} onClick={function () { addSkill(option[0]) }} />{option[1]}</label>
+                                    ))}
+                                </div>
+                            </div>
+
+                        </div>
                         <div className="col text-center mt-3">
                             <button className="createButton">
                                 {loading ? "Posting..." : "Post Job"}
                             </button>
                         </div>
                     </div>
+
                 </form>
             </div>
         </div>
